@@ -7,10 +7,10 @@ class RegistrationsController < ApplicationController
   end
 
   def create
-
+    logger.warn "Create"
     @registration = Registration.new(registration_params)
     # @registration.save
-
+    logger.warn "Create more"
     # redirect_to registrations_url
 
     respond_to do |format|

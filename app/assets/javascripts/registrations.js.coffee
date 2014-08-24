@@ -26,6 +26,9 @@ $ ->
           $('#registration_' + key).before('<label class="error">' + data.error[key] + '</label>')
       else
         console.log "Veldig feil"
+        console.log jqXHR
+        console.log textStatus
+        console.log errorThrown
     )
   # $('.btn').on 'click', (e) ->
   #   e.preventDefault();

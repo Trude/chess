@@ -1,0 +1,11 @@
+// VARIABLES
+$dark_pink: #8c004e;
+$pink: #d10074;
+
+
+// BOX SIZING
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}

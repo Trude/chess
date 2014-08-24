@@ -1,0 +1,23 @@
+html {
+  font: 62.5% Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size: 62.5% !important;
+}
+
+h1, h2, h3, h4, p {
+  font-family: Arial;
+  &.normal {
+    font-weight: normal;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+

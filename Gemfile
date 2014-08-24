@@ -16,19 +16,20 @@ gem 'haml'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 4.0.3'
-  gem 'coffee-rails', '~> 4.0.1'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
-  gem 'uglifier', '>= 2.5.0'
-  # gem "chosen-rails", "~> 1.1.0"
-  # gem 'jquery-rails'
-  # gem 'jquery-ui-rails'
-end
+# group :assets do
+gem 'sass-rails',   '~> 4.0.3'
+gem 'coffee-rails', '~> 4.0.1'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', :platform => :ruby
+gem 'uglifier', '>= 2.5.0'
+# gem "chosen-rails", "~> 1.1.0"
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+# end
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

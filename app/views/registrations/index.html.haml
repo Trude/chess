@@ -10,16 +10,16 @@
     = form_for @registration, method: :post do |f|
       / %input{name: 'complete_order', type: 'hidden', value: 'true'}/
       .form-row
-        .label Navn:
+        %label.text Navn:
         = f.text_field :name, class: 'text'
       .form-row
-        .label Firma:
+        %label.text Firma:
         = f.text_field :company, class: 'text'
       .form-row
-        .label Telefonnummer:
+        %label.text Telefonnummer:
         = f.text_field :phone, class: 'text'
       .form-row
-        .label Epost:
+        %label.text Epost:
         = f.text_field :email, class: 'text'
 
 

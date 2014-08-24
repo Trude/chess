@@ -114,13 +114,26 @@ body {
 
         }
 
-        .label {
-          margin-top: 10px;
-          text-transform: uppercase;
-          font-size: 14px;
-          font-size: 1.4rem;
+        p.signed_up {
+          background-color: #FFD87F;
+          border: 1px solid #FF5900;
+          padding: 10px;
         }
+
         .form-row {
+          width:  100%;
+          overflow: hidden;
+          padding-top: 20px;
+          label.text {
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-size: 1.4rem;
+            width: 100%;
+          }
+          label.error {
+              float: right;
+          }
           input {
             // -webkit-border-radius:0;
             // -moz-border-radius:0;
@@ -137,13 +150,18 @@ body {
             // max-width:100% !important;
             @include box-sizing;
             width: 100%;
+
+            &.error{
+              // border: 1px solid #FF5900;
+              background-color: #FFD87F;
+            }
           }
         }
         .btn {
           background-color: $pink;
           padding: 20px;
           width: 200px;
-          margin: 10px auto;
+          margin: 30px auto 10px;
           display: inline-block;
           float: right;
           // font-size: 16px;
@@ -154,6 +172,7 @@ body {
           // text-decoration: none;
           text-transform: uppercase;
           border: none;
+
         }
       }
     }

@@ -9,19 +9,19 @@ class RegistrationsController < ApplicationController
   def create
 
     @registration = Registration.new(registration_params)
-    @registration.save
+    # @registration.save
 
-    redirect_to registrations_url
+    # redirect_to registrations_url
 
-    # respond_to do |format|
-    #   if @registration.save
-    #     pr "Lagret"
-    #     format.json { render json: { success: true } }
-    #   else
-    #     pr "feilet #{@registration.errors.inspect}"
-    #     format.json { render json: { error: @registration.errors } }
-    #   end
-    # end
+    respond_to do |format|
+      if @registration.save
+        pr "Lagret"
+        format.json { render json: { success: true } }
+      else
+        pr "feilet #{@registration.errors.inspect}"
+        format.json { render json: { error: @registration.errors }, status: 400 }
+      end
+    end
 
   end
 

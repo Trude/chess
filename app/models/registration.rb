@@ -1,6 +1,6 @@
 class Registration < ActiveRecord::Base
 
-  validates_presence_of :name, :company, :phone, :email
+  validates_presence_of :name, :company, :phone, :email, message: "må fylles ut"
   # , :mail_and_invoice_address,
   #     :first_name, :last_name, :mobile_phone_number, :email
   # validates :organization_number, presence: true, numericality: { only_integer: true },

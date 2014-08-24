@@ -16,10 +16,10 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       if @registration.save
-        pr "Lagret"
+        # pr "Lagret"
         format.json { render json: { success: true } }
       else
-        pr "feilet #{@registration.errors.inspect}"
+        # pr "feilet #{@registration.errors.inspect}"
         format.json { render json: { error: @registration.errors }, status: 400 }
       end
     end

@@ -8,6 +8,7 @@ class RegistrationsController < ApplicationController
 
   def create
     logger.warn "Create"
+    logger.warn "#create, params: {registration_params.inspect}"
     @registration = Registration.new(registration_params)
     # @registration.save
     logger.warn "Create more"
@@ -26,6 +27,7 @@ class RegistrationsController < ApplicationController
   end
 
   def registration_params
+    logger.warn "registration_params: #{params.inspect}"
     params.require(:registration).permit(:name, :company, :phone, :email)
   end
 

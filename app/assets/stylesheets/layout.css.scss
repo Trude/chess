@@ -24,16 +24,18 @@ body {
       }
     }
     .banner {
-      background: image_url('background-12.jpg') no-repeat center;
-      margin-top: -87px;
-      height: 630px;
+      background: image_url('background.jpg') no-repeat center;
+      margin-top: -150px;
+      height: 820px;
       width: 100%;
 
       .text {
         padding-top: 250px;
         text-align: center;
         margin: 0;
-        color: white;
+        color: #6e6e6e;
+        width: 60%;
+        margin: 0 auto;
         h1 {
           font-size: 56px;
           font-size: 5.6rem;
@@ -43,7 +45,7 @@ body {
           font-size: 2.6rem;
         }
         .sign-up {
-          margin-top: 40px;
+          margin-top: 160px;
           a {
             margin: 20px auto;
             background-color: $pink;

@@ -3,36 +3,42 @@
   %p I samarbeid med Norges Sjakkforbund gir vi deg mulighet til å slå Simen Agdestein og Olga Dolzhikova i sjakk på Steria sin stand på JavaZone 2014. I flere av pausene kjører vi simultanlynsjakk, alt du trenger å gjøre for å delta er å melde deg på i skjemaet under. Den som gjør det best hver av dagene vinner et signert sjakkbrett. Alle som melder seg på er også med i trekningen av en tur med luftballongen til Steria.
   %p Av alle som har meldt seg på trekker vi ut noen som får lov til å prøve seg. De som blir trukket ut får beskjed i god tid før hver runde (Påmelding fordrer at du har billett til JavaZone). Vi kommer til å kjøre tre runder med simultanlynsjakk hver dag, så det blir mange muligheter.
 
-%section#registration
-  .form-container
-    %h2 Meld deg på
-    %p Fyll ut skjema under for å få muligheten til å spille sjakk mot Simen Agdestein eller Olga Dolzhikova på JavaZone 2014.
-    = form_for @registration, method: :post do |f|
-      / %input{name: 'complete_order', type: 'hidden', value: 'true'}/
-      .form-row
-        %label.text Navn:
-        = f.text_field :name, class: 'text'
-      .form-row
-        %label.text Firma:
-        = f.text_field :company, class: 'text'
-      .form-row
-        %label.text Telefonnummer:
-        = f.text_field :phone, class: 'text'
-      .form-row
-        %label.text Epost:
-        = f.text_field :email, class: 'text'
+
+%section.one-row
+  %section.players
+    .player
+      = image_tag('simen-agdestein.jpg')
+      .info
+        %p
+          %span.bold Simen Agdestein
+          er en av Norges aller fremste sjakkspillere. Agdestein har blitt kåret til norgesmester for senior syv ganger og ble i 1985 utnevnt til internasjonal stormester. Han har tidligere vært fotballspiller på eliteserienivå (Lyn) og spilt åtte kamper for fotballlandslaget. Agdestein har vært sjakklærer og -trener for Magnus Carlsen.
+    .player
+      = image_tag('olga-dolzhikova.jpeg')
+      .info
+        %p
+          %span.bold Olga Dolzhikova
+          er en av landets beste kvinnelige sjakkspillere og deltok på det norske landslaget under Sjakk-OL i Tromsø tidligere i år. Dolzhikova har fullført en doktorgradsavhandling i pedagogikk om sjakkundervisning av barn, samt skrevet fire lærebøker i sjakk.
+
+  %section#registration
+    .form-container
+      %h2 Meld deg på
+      %p Fyll ut skjema under for å få muligheten til å spille sjakk mot Simen Agdestein eller Olga Dolzhikova på JavaZone 2014.
+      = form_for @registration, method: :post do |f|
+        .form-row
+          %label.text Navn:
+          = f.text_field :name, class: 'text'
+        .form-row
+          %label.text Firma:
+          = f.text_field :company, class: 'text'
+        .form-row
+          %label.text Telefonnummer:
+          = f.text_field :phone, class: 'text'
+        .form-row
+          %label.text Epost:
+          = f.text_field :email, class: 'text'
 
 
-      = f.submit 'Meld på', class: 'btn'
+        = f.submit 'Meld deg på', class: 'btn'
 
-%section.players
-  .player
-    = image_tag('simen-agdestein.jpg')
-    %h2 Simen Agdestein
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lectus erat, sit amet gravida eros laoreet et. Suspendisse sed tempor enim, sed rhoncus tellus. Nam volutpat neque in arcu fermentum, in vulputate justo tristique. Vestibulum laoreet tristique rutrum. Etiam lorem arcu, volutpat non ullamcorper vitae, iaculis vitae dolor. Nulla facilisi. Nunc lorem urna, pretium a eleifend sed, sagittis vitae lorem. Aliquam enim tellus, aliquet quis mauris vitae, efficitur dapibus enim. Etiam cursus nibh nunc
-  .player
-    = image_tag('olga-dolzhikova.jpeg')
-    %h2 Olga Dolzhikova
-    %p Proin sit amet finibus ipsum, quis laoreet elit. Pellentesque in tortor ultricies, porta purus sed, tempus est. Aenean auctor lorem lacus, a suscipit lorem ullamcorper sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget dui ultricies, semper dolor ac, fermentum elit. Ut non enim sit amet magna scelerisque convallis sit amet non urna. Aliquam erat volutpat. Etiam tempus elit id eleifend dignissim. Suspendisse quis imperdiet massa. Nunc consectetur, turpis vitae scelerisque lobortis, nibh eros luctus ante, eget vestibulum ante elit sit amet sapien.
 
 

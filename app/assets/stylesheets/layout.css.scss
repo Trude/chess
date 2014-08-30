@@ -25,12 +25,12 @@ body {
     }
     .banner {
       background: image_url('background.jpg') no-repeat center;
-      margin-top: -150px;
+      margin-top: -200px;
       height: 820px;
       width: 100%;
 
       .text {
-        padding-top: 250px;
+        padding-top: 230px;
         text-align: center;
         margin: 0;
         color: #6e6e6e;
@@ -39,18 +39,23 @@ body {
         h1 {
           font-size: 56px;
           font-size: 5.6rem;
+          background-color: white;
+          padding: 10px;
         }
         h2 {
           font-size: 32px;
           font-size: 3.2rem;
         }
+        p {
+          margin: 7px 0 0;
+        }
         .sign-up {
-          margin-top: 160px;
+          margin-top: 80px;
           a {
             margin: 20px auto;
             background-color: $pink;
-            font-size: 16px;
-            font-size: 1.6rem;
+            font-size: 18px;
+            font-size: 1.8rem;
             color: white;
             padding: 20px;
             width: 200px;
@@ -70,6 +75,7 @@ body {
     margin-bottom: -85px;
     padding-bottom: 85px;
     @include box-sizing;
+    overflow: hidden;
 
     .information {
       padding: 40px 4%;
@@ -81,103 +87,125 @@ body {
       }
     }
 
-    .players {
-      overflow: hidden;
-      margin: 50px 0;
-      .player {
-        display: inline-block;
-        width: 40%;
-        margin: 0 5%;
-        padding: 20px;
+    .one-row {
+      margin: 40px auto;
+      width: 90%;
+      .players {
+        overflow: hidden;
+        // margin: 50px 0;
         float: left;
-        height: 0;
-        padding-bottom: 60%;
+        display: inline-block;
+        width: 52%;
+        // margin-left: 3%;
         @include box-sizing;
-        img {
-          width: 100%;
+        .player {
+          // display: inline-block;
+          // width: 40%;
+          // margin: 0 5%;
+          padding: 20px;
+          float: left;
+          // height: 0;
+          margin-bottom: 20px;
+          // padding-bottom: 60%;
+          background-color: #eeebeb;
+          padding: 20px;
+          @include box-sizing;
+          img {
+            width: 30%;
+          }
+          .info {
+            text-align: left;
+            width: 65%;
+            // float: left;
+            display: inline-block;
+          }
         }
       }
-    }
 
-    #registration {
-      // padding: 50px 0;
-      margin: 20px 0;
-
-      .form-container {
-        overflow: hidden;
-        background-color: #eeebeb;
+      #registration {
+        // padding: 50px 0;
+        // margin: 20px 0;
+        float: right;
+        display: inline-block;
         width: 40%;
-        margin: 0 auto;
 
-        padding: 20px;
-        text-align: left;
-
-        h2 {
-          font-size: 26px;
-          font-size: 2.6rem;
-          text-transform: uppercase;
-
-        }
-
-        p.signed_up {
-          background-color: #B7DD8F;
-          border: 1px solid #7AB800;
-          padding: 10px;
-        }
-
-        .form-row {
-          width:  100%;
+        @include box-sizing;
+        .form-container {
           overflow: hidden;
-          padding-top: 20px;
-          label.text {
-            margin-top: 10px;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-size: 1.4rem;
-            width: 100%;
-          }
-          label.error {
-              float: right;
-          }
-          input {
-            // -webkit-border-radius:0;
-            // -moz-border-radius:0;
-            // border-radius:0;
-            border: 1px solid #bfc0c4;
-            // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 16px;
-            height: 45px;
-            line-height: 1.5;
-            margin-right:0;
-            margin-left:0;
-            padding: 11px 6px 10px 5px;
-            vertical-align: bottom;
-            // max-width:100% !important;
-            @include box-sizing;
-            width: 100%;
+          background-color: #eeebeb;
+          // width: 40%;
+          margin: 0 auto;
 
-            &.error{
-              // border: 1px solid #FF5900;
-              background-color: #FFD87F;
+          padding: 20px;
+          text-align: left;
+
+          h2 {
+            font-size: 26px;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+
+          }
+
+          p.signed_up {
+            background-color: #B7DD8F;
+            border: 1px solid #7AB800;
+            padding: 10px;
+          }
+
+          .form-row {
+            width:  100%;
+            overflow: hidden;
+            padding-top: 20px;
+            label.text {
+              margin-top: 10px;
+              text-transform: uppercase;
+              font-size: 14px;
+              font-size: 1.4rem;
+              width: 100%;
+            }
+            label.error {
+                float: right;
+            }
+            input {
+              // -webkit-border-radius:0;
+              // -moz-border-radius:0;
+              // border-radius:0;
+              border: 1px solid #bfc0c4;
+              // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+              font-size: 16px;
+              height: 45px;
+              line-height: 1.5;
+              margin-right:0;
+              margin-left:0;
+              padding: 11px 6px 10px 5px;
+              vertical-align: bottom;
+              // max-width:100% !important;
+              @include box-sizing;
+              width: 100%;
+
+              &.error{
+                // border: 1px solid #FF5900;
+                background-color: #FFD87F;
+              }
             }
           }
-        }
-        .btn {
-          background-color: $pink;
-          padding: 20px;
-          width: 200px;
-          margin: 30px auto 10px;
-          display: inline-block;
-          float: right;
-          // font-size: 16px;
-          // font-size: 1.6rem;
-          color: white;
-          @include box-sizing;
-          cursor: pointer;
-          // text-decoration: none;
-          text-transform: uppercase;
-          border: none;
+          .btn {
+            background-color: $pink;
+            padding: 20px;
+            width: 200px;
+            margin: 30px auto 10px;
+            display: inline-block;
+            float: right;
+            // font-size: 16px;
+            // font-size: 1.6rem;
+            color: white;
+            @include box-sizing;
+            cursor: pointer;
+            // text-decoration: none;
+            text-transform: uppercase;
+            border: none;
 
+          }
         }
       }
     }

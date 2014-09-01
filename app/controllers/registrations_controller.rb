@@ -29,7 +29,7 @@ class RegistrationsController < ApplicationController
 
   def registration_params
     logger.warn "registration_params: #{params.inspect}"
-    params.require(:registration).permit(:name, :company, :phone, :email, :goingToJz)
+    params.require(:registration).permit(:name, :company, :phone, :email, :goingToJz, :want_to_be_contacted)
   end
 
 

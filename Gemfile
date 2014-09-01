@@ -27,6 +27,8 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 # end
 
+gem 'newrelic_rpm'
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem 'pg'

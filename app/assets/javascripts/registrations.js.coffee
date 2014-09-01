@@ -16,7 +16,7 @@ $ ->
       data: form.serialize()
     ).done( (data) ->
       form.hide()
-      form.after("<p class='signed_up'>Takk for at du meldte deg på, hvis du blir trukket ut til å få spille får du nærmere beskjed!</p>")
+      form.after("<p class='signed_up'>Takk for din påmelding. Ved stor interesse blir vi nødt til å trekke tilfeldig fra påmeldingslisten. De som får spille får en SMS en time før runden starter. Vennligst følg med på mobilen og møt opp i god tid før runden starter. Vi sees på JavaZone!</p>")
     ).error( (jqXHR, textStatus, errorThrown) ->
       if jqXHR.status == 400
         console.log "400 feil"

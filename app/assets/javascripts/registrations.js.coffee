@@ -23,18 +23,10 @@ $ ->
         for key of data.error
           console.log $('#registration_' + key)
           $('#registration_' + key).addClass('error')
-          $('#registration_' + key).before('<label class="error">' + data.error[key] + '</label>')
+          $('#registration_' + key).after('<label class="error">' + data.error[key] + '</label>')
       else
         console.log "Veldig feil"
         console.log jqXHR
         console.log textStatus
         console.log errorThrown
     )
-  # $('.btn').on 'click', (e) ->
-  #   e.preventDefault();
-  #   $.ajax(
-  #     type: "POST"
-  #     url:
-  #     data: data
-  #   ).done((data) ->
-  #     $('.timeout-error').addClass('hidden')

@@ -17,14 +17,21 @@
           %label.text Firma:
           = f.text_field :company, class: 'text'
         .form-row
-          %label.text Telefonnummer:
-          = f.text_field :phone, class: 'text'
+          .phone
+            %label.text Telefonnummer:
+            = f.text_field :phone, class: 'text'
+          .email
+            %label.text Epost:
+            = f.text_field :email, class: 'text'
         .form-row
-          %label.text Epost:
-          = f.text_field :email, class: 'text'
+          = f.check_box :goingToJz, class: 'checkbox'
+          %label.checkbox Ja, jeg skal på JavaZone
+
 
 
         = f.submit 'Meld deg på', class: 'btn'
+        .form-row
+          %p.accept Ved å melde deg på konkuransen aksepterer du at Steria kan kontakte deg.
 
   %section.players
     .player

@@ -99,21 +99,14 @@ body {
       width: 90%;
       .players {
         overflow: hidden;
-        // margin: 50px 0;
         float: right;
         display: inline-block;
         width: 52%;
-        // margin-left: 3%;
         @include box-sizing;
         .player {
-          // display: inline-block;
-          // width: 40%;
-          // margin: 0 5%;
           padding: 20px;
           float: left;
-          // height: 0;
           margin-bottom: 20px;
-          // padding-bottom: 60%;
           background-color: #eeebeb;
           padding: 20px;
           @include box-sizing;
@@ -125,7 +118,6 @@ body {
             vertical-align:top;
             text-align: left;
             width: 65%;
-            // float: left;
             display: inline-block;
             padding-left: 20px;
             p {
@@ -137,8 +129,6 @@ body {
       }
 
       #registration {
-        // padding: 50px 0;
-        // margin: 20px 0;
         float: left;
         display: inline-block;
         width: 40%;
@@ -147,7 +137,6 @@ body {
         .form-container {
           overflow: hidden;
           background-color: #eeebeb;
-          // width: 40%;
           margin: 0 auto;
 
           padding: 20px;
@@ -157,45 +146,74 @@ body {
             font-size: 26px;
             font-size: 2.6rem;
             font-weight: normal;
-
           }
 
-          p.signed_up {
-            background-color: #B7DD8F;
-            border: 1px solid #7AB800;
-            padding: 10px;
+          p{
+            margin-bottom: 0;
+            &.signed_up {
+              background-color: #B7DD8F;
+              border: 1px solid #7AB800;
+              padding: 10px;
+            }
+            &.accept {
+              font-size: 12px;
+              font-size: 1.2rem;
+              margin: 0;
+              color: #6e6e6e;
+            }
           }
 
           .form-row {
             width:  100%;
             overflow: hidden;
-            padding-top: 20px;
-            label.text {
-              margin-top: 10px;
-              text-transform: uppercase;
-              font-size: 14px;
-              font-size: 1.4rem;
-              width: 100%;
+            padding-top: 15px;
+            @include box-sizing;
+            .phone {
+              width: 39%;
+              display: inline-block;
+              margin-right: 1%;
             }
-            label.error {
-                float: right;
+            .email {
+              width: 59%;
+              display: inline-block;
             }
+            label {
+              &.text {
+                margin-top: 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-size: 1.4rem;
+                display: block;
+              }
+              &.checkbox {
+                display: inline-block;
+                float: left;
+                font-size: 14px;
+                font-size: 1.4rem;
+              }
+              &.error {
+                  float: right;
+              }
+            }
+
             input {
-              // -webkit-border-radius:0;
-              // -moz-border-radius:0;
-              // border-radius:0;
-              border: 1px solid #bfc0c4;
-              // font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-              font-size: 16px;
-              height: 45px;
-              line-height: 1.5;
-              margin-right:0;
-              margin-left:0;
-              padding: 11px 6px 10px 5px;
-              vertical-align: bottom;
-              // max-width:100% !important;
-              @include box-sizing;
-              width: 100%;
+              &.text {
+                border: 1px solid #bfc0c4;
+                font-size: 16px;
+                height: 45px;
+                line-height: 1.5;
+                margin-right:0;
+                margin-left:0;
+                padding: 11px 6px 10px 5px;
+                vertical-align: bottom;
+                @include box-sizing;
+                width: 100%;
+              }
+
+              &.checkbox {
+                display: inline-block;
+                float: left;
+              }
 
               &.error{
                 // border: 1px solid #FF5900;

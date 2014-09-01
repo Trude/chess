@@ -5,6 +5,8 @@ $ ->
   console.log "Hello"
   $(".new_registration").submit (e) ->
     e.preventDefault()
+    $('.form-row input').removeClass('error');
+    $('.form-row label.error').remove();
     form = $(this)
     console.log "YOLO"
     console.log $(this)

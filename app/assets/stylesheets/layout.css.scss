@@ -96,12 +96,15 @@ body {
     overflow: hidden;
 
     .information {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 40px 4%;
 
       h1 {
         font-size: 35px;
         font-size: 3.5rem;
         font-weight: normal;
+        margin-bottom: 55px;
       }
     }
 
@@ -206,7 +209,7 @@ body {
             }
             &.checkbox {
               padding-top: 5px;
-              height: 60px;
+              height: 48px;
               label.error {
                 position: absolute;
                 bottom: 0;
@@ -326,8 +329,8 @@ body {
       padding-top: 190px;
       width: 90%;
       h1 {
-        font-size: 44px;
-        font-size: 4.44pxrem;
+        font-size: 40px;
+        font-size: 4.0rem;
       }
       h2 {
         font-size: 22px;

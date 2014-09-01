@@ -10,7 +10,6 @@ class RegistrationsController < ApplicationController
     logger.warn "Create"
     logger.warn "#create, params: {registration_params.inspect}"
     @registration = Registration.new(registration_params)
-    pr @registration.inspect
     # @registration.save
     logger.warn "Create more"
     # redirect_to registrations_url

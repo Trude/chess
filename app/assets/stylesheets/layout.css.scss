@@ -169,13 +169,6 @@ body {
               border: 1px solid #7AB800;
               padding: 10px;
             }
-            &.accept {
-              font-size: 12px;
-              font-size: 1.2rem;
-              margin: 0;
-              color: #6e6e6e;
-              float: right;
-            }
           }
 
           .form-row {
@@ -212,6 +205,7 @@ body {
               }
             }
             &.checkbox {
+              padding-top: 5px;
               height: 60px;
               label.error {
                 position: absolute;
@@ -221,6 +215,13 @@ body {
                 padding: 5px;
                 margin-top: 2px;
               }
+            }
+            &.contact-me {
+              height: auto;
+              padding-top: 15px;
+              label {
+                width: 80%;
+                }
             }
 
             input {

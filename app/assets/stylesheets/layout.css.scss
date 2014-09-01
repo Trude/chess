@@ -111,10 +111,12 @@ body {
           padding: 20px;
           @include box-sizing;
           img {
-            width: 30%;
+            @include box-sizing;
+            width: 29%;
             vertical-align:top;
           }
           .info {
+            @include box-sizing;
             vertical-align:top;
             text-align: left;
             width: 65%;
@@ -132,6 +134,7 @@ body {
         float: left;
         display: inline-block;
         width: 40%;
+        margin-bottom: 20px;
 
         @include box-sizing;
         .form-container {
@@ -160,6 +163,7 @@ body {
               font-size: 1.2rem;
               margin: 0;
               color: #6e6e6e;
+              float: right;
             }
           }
 
@@ -250,4 +254,71 @@ body {
     width: 100%;
   }
 
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    #header .banner .text {
+      padding-top: 200px;
+      width: 65%;
+    }
+    .container {
+      .one-row {
+        .players {
+          width: 47%;
+        }
+
+        #registration {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  body {
+    #header .banner .text {
+      width: 80%;
+    }
+
+    .container {
+      .one-row {
+        .players {
+          width: 100%;
+        }
+
+        #registration {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    #header .banner .text {
+      padding-top: 190px;
+      width: 90%;
+    }
+
+    .container {
+      .one-row {
+
+        #registration {
+          .form-container .form-row {
+            .phone {
+              width: 100%;
+              margin-right: 0;
+            }
+            .email {
+              width: 100%;
+            }
+          }
+
+        }
+      }
+    }
+  }
 }

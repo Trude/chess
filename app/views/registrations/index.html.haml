@@ -19,10 +19,10 @@
         .form-row
           .phone
             %label.text Telefonnummer:
-            = f.text_field :phone, class: 'text'
+            = f.number_field :phone, class: 'text'
           .email
             %label.text Epost:
-            = f.text_field :email, class: 'text'
+            = f.email_field :email, class: 'text'
         .form-row
           = f.check_box :goingToJz, class: 'checkbox'
           %label.checkbox Ja, jeg skal på JavaZone

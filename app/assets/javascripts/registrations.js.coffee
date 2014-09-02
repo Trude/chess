@@ -19,7 +19,7 @@ $ ->
         data = $.parseJSON(jqXHR.responseText)
         for key of data.error
           $('#registration_' + key).addClass('error')
-          $('#registration_' + key).after('<label class="error">' + data.error[key] + '</label>')
+          $('#registration_' + key).parent().children().last().after('<label class="error">' + data.error[key] + '</label>')
       else
         console.log "FEILET"
     )

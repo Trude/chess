@@ -6,6 +6,11 @@ body {
   // background-color: white;
   background-color: #999;
 
+  a {
+    text-decoration: none;
+    color: #04315b;
+  }
+
 
   #header {
     position: relative;
@@ -209,23 +214,17 @@ body {
             }
             &.checkbox {
               padding-top: 5px;
-              height: 48px;
               label.error {
-                position: absolute;
-                bottom: 0;
-                left: 0;
+                float: left;
                 background-color: #FFD87F;
                 padding: 5px;
                 margin-top: 2px;
               }
+              &.going {
+                padding-top: 15px;
+              }
             }
-            &.contact-me {
-              height: auto;
-              padding-top: 15px;
-              label {
-                width: 80%;
-                }
-            }
+
 
             input {
               &.text {

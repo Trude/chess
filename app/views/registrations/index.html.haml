@@ -4,13 +4,16 @@
 
   %p Det blir arrangert seks runder simultanlynsjakk. Tre på onsdag og tre på torsdag, hver runde på 20 minutter. Onsdag fra kl 14:00 og Torsdag fra 12:40. De som blir trukket ut får beskjed på SMS en time før de skal spille. I tilfelle det er noen åpne plasser ved bordet trekker vi en tilfeldig person som står ved standen vår et par minutter før start.
 
-  %p Den som gjør det best hver av dagene vinner et signert sjakkbrett. Alle som twitrer med #steriasjakk i løpet av konferansen er med i trekningen av en tur med luftballongen til Steria. Hvis du heller vil være tilskuer er det bare å komme bort til standen vår, ta en kaffe og slå av en prat.
+  %p
+    Den som gjør det best hver av dagene vinner et signert sjakkbrett. Alle som twitrer med
+    = link_to '#steriasjakk', 'https://twitter.com/hashtag/steriasjakk?src=hash', target: '_blank'
+    i løpet av konferansen er med i trekningen av en tur med luftballongen til Steria. Hvis du heller vil være tilskuer er det bare å komme bort til standen vår, ta en kaffe og slå av en prat.
 
 
 %section.one-row
   %section#registration
     .form-container
-      %h2 Meld meg på
+      %h2 Ta utfordringen!
       %p Fyll ut skjema under for å være med i trekningen om å spille sjakk mot Simen Agdestein eller Olga Dolzhikova på JavaZone 2014.
       = form_for @registration, method: :post do |f|
         .form-row
@@ -26,12 +29,12 @@
           .email
             %label.text Epost:
             = f.email_field :email, class: 'text'
-        .form-row.checkbox.contact-me
-          = f.check_box :want_to_be_contacted, class: 'checkbox'
-          %label.checkbox Jeg ønsker å bli kontaktet av Steria angående karrieremuligheter
-        .form-row.checkbox
+        .form-row.checkbox.going
           = f.check_box :goingToJz, class: 'checkbox'
           %label.checkbox Jeg skal på JavaZone
+        .form-row.checkbox
+          = f.check_box :want_to_be_contacted, class: 'checkbox', checked: true
+          %label.checkbox Jeg godkjenner at steria kan kontakte meg
 
 
         = f.submit 'Meld deg på', class: 'btn'

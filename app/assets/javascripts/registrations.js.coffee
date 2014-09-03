@@ -4,16 +4,18 @@
 $ ->
   $(".new_registration").submit (e) ->
     e.preventDefault()
-    $('.form-row input').removeClass('error');
-    $('.form-row label.error').remove();
+    $('.form-row input').removeClass('error')
+    $('.form-row label.error').remove()
     form = $(this)
     $.ajax(
       type: 'POST'
       url: form.attr( "action" )
       data: form.serialize()
     ).done( (data) ->
-      form.hide()
-      form.after("<p class='signed_up'>Takk for din påmelding. Ved stor interesse blir vi nødt til å trekke tilfeldig fra påmeldingslisten. De som får spille får en SMS en time før runden starter. Vennligst følg med på mobilen og møt opp i god tid før runden starter. Vi sees på JavaZone!</p>")
+      $('.form-container .form').addClass('hidden')
+      $('.form-container .confirmation').removeClass('hidden')
+      # form.hide()
+      # form.after("<p class='signed_up'>Takk for din påmelding. Ved stor interesse blir vi nødt til å trekke tilfeldig fra påmeldingslisten. De som får spille får en SMS en time før runden starter. Vennligst følg med på mobilen og møt opp i god tid før runden starter. Vi sees på JavaZone!</p>")
     ).error( (jqXHR, textStatus, errorThrown) ->
       if jqXHR.status == 400
         data = $.parseJSON(jqXHR.responseText)

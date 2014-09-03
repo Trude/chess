@@ -11,6 +11,11 @@ body {
     color: #04315b;
   }
 
+  .hidden {
+    display: none;
+  }
+
+
 
   #header {
     position: relative;
@@ -170,13 +175,10 @@ body {
             font-weight: normal;
           }
 
-          p{
-            margin-bottom: 0;
-            &.signed_up {
-              background-color: #B7DD8F;
-              border: 1px solid #7AB800;
-              padding: 10px;
-            }
+          .signed_up {
+            background-color: #B7DD8F;
+            border: 1px solid #7AB800;
+            padding: 10px;
           }
 
           .form-row {
@@ -278,6 +280,15 @@ body {
     background: image_url('footer.png') no-repeat right;
     position: relative;
     width: 100%;
+    .text {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      color: lightpink;
+      a {
+        color: lightpink;
+      }
+    }
   }
 
 }

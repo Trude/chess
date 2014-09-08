@@ -1,8 +1,11 @@
 class RegistrationsController < ApplicationController
 
   def index
-
     @registration = Registration.new
+  end
+
+  def show_all
+    @registrations = Registration.all
 
   end
 

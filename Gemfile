@@ -24,7 +24,7 @@ gem 'coffee-rails', '~> 4.0.1'
 gem 'uglifier', '>= 2.5.0'
 # gem "chosen-rails", "~> 1.1.0"
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
+# gem 'jquery-ui-rails'
 # end
 
 gem 'newrelic_rpm'
@@ -32,6 +32,12 @@ gem 'newrelic_rpm'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem 'pg'
+# gem 'jquery-datatables-rails', '~> 2.2.3'
+
+# group :assets do
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+gem 'jquery-ui-rails'
+# end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

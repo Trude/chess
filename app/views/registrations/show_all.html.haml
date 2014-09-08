@@ -1,0 +1,21 @@
+%section.all-registrations
+  %table#regtab
+    %thead
+      %tr
+        %th Navn
+        %th Firma
+        %th Telefonnummer
+        %th Mail
+        %th Kan kontaktes?
+
+    %tbody
+      - for r in @registrations
+        %tr
+          %td= r.name
+          %td= r.company
+          %td= r.phone
+          %td= r.email
+          %td= r.want_to_be_contacted ? 'Ja' : 'Nei'
+
+:javascript
+  $('#regtab').dataTable();

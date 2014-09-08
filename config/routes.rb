@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'registrations#index'
 
-  resources :registrations, only: [:index, :create, :update, :destroy]
+  resources :registrations, only: [:index, :create]
+
+  get 'registrations/show_all', to: 'registrations#show_all', as: 'heihvordetgar'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -11,4 +11,5 @@
 # about supported directives.
 #
 #= require jquery
+#= require dataTables/jquery.dataTables
 #= require registrations

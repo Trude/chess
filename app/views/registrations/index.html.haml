@@ -1,22 +1,15 @@
 %section.information
-  %h1 Spill sjakk med Agdestein og Dolzhikova
-  %p I samarbeid med Norges Sjakkforbund gir vi deg mulighet til å slå Simen Agdestein eller Olga Dolzhikova i sjakk på Sterias stand på JavaZone 2014. I flere av pausene mellom foredragene kjører vi klokkesimultan hvor flere får prøve seg samtidig mot en av de to landslagsspillerne.
+  %h1 Spill sjakk med Agdestein
+  %p I samarbeid med NDC gir vi deg mulighet til å slå Simen Agdestein i sjakk på Sopra Sterias stand på NDC 2015. I flere av pausene mellom foredragene kjører vi klokkesimultan hvor flere får prøve seg samtidig mot en av de to landslagsspillerne.
 
   %p Det blir totalt arrangert seks runder klokkesimultan disse to dagene – hver på 20 minutter. Av de påmeldte trekker vi ut 6-8 spillere per runde. De som blir trukket ut får en SMS med klokkeslett i god tid før de skal møte opp. Tidspunkt kan du se under. Den som gjør det best hver av dagene, vinner et signert sjakkbrett.
 
   %p
-    Hvis du heller vil være tilskuer, er du selvsagt velkommen bort til standen vår for å ta en kaffe og slå av en prat. Alle som twitrer med både
-    = link_to '#steriasjakk', 'https://twitter.com/hashtag/steriasjakk?src=hash', target: '_blank'
-    og
-    = link_to '#javazone', 'https://twitter.com/search?f=realtime&q=%23javazone%20%23steriasjakk&src=typd', target: '_blank'
-    i løpet av konferansen, er med i trekningen av en tur med luftballongen til Steria.
-
-  %p
     Det vil bli kjørt klokkesimultan sjakk i følgende pauser:
     %br
-    10. september: 14:00–14:20, 15:20–15:40 og 16:40–17:00
+    18. juni: 11:20–11:40, 12:40–13:00 og 14:40–15:00
     %br
-    11. september: 12:40–13:00, 14:00–14:20 og 15:20–15:40
+    19. juni: 11:20–11:40, 12:40–13:00 og 14:40–15:00
     %br
 
 %section.one-row
@@ -24,7 +17,7 @@
     .form-container
       %h2 Ta utfordringen!
       .form
-        %p Fyll ut skjema under for å være med i trekningen om å spille sjakk mot Simen Agdestein eller Olga Dolzhikova på JavaZone 2014.
+        %p Fyll ut skjema under for å være med i trekningen om å spille sjakk mot Simen Agdestein på NDC Oslo 2015.
         = form_for @registration, method: :post do |f|
           .form-row
             %label.text Navn:
@@ -41,16 +34,16 @@
               = f.email_field :email, class: 'text'
           .form-row.checkbox.going
             = f.check_box :goingToJz, class: 'checkbox'
-            %label.checkbox Jeg skal på JavaZone
+            %label.checkbox Jeg skal på NDC
           .form-row.checkbox
             = f.check_box :want_to_be_contacted, class: 'checkbox', checked: true
-            %label.checkbox Jeg godkjenner at Steria kan kontakte meg
+            %label.checkbox Jeg godkjenner at Sopra Steria kan kontakte meg
 
 
           = f.submit 'Meld deg på', class: 'btn'
       .confirmation.signed_up.hidden
         %p Takk for at du meldte deg på!
-        %p Lynsjakk vil foregå i pausene mellom foredragene. Det vil bli trukket ut spillere blant alle påmeldte, og de som får spille vil få en sms ca én time før sjakkrunden starter. Det er viktig at du svarer "ja" på denne smsen og at du møter opp på Steria sin stand på angitt tidspunkt.
+        %p Lynsjakk vil foregå i pausene mellom foredragene. Det vil bli trukket ut spillere blant alle påmeldte, og de som får spille vil få en sms ca én time før sjakkrunden starter. Det er viktig at du svarer "ja" på denne smsen og at du møter opp på Sopra Steria sin stand på angitt tidspunkt.
         %p Om du ikke blir trukket ut er du velkommen som tilskuer!
 
 
@@ -61,12 +54,6 @@
         %p
           %span.bold Simen Agdestein
           er en av Norges aller fremste sjakkspillere gjennom tidene. Agdestein har blitt kåret til norgesmester for senior syv ganger, flere ganger nordensmester og ble i 1985 utnevnt til internasjonal stormester. Han har tidligere vært fotballspiller på eliteserienivå (Lyn) og spilt åtte kamper for fotballandslaget. Agdestein har vært sjakklærer og -trener for Magnus Carlsen.
-    .player
-      = image_tag('olga-dolzhikova.jpg')
-      .info
-        %p
-          %span.bold Olga Dolzhikova
-          er en av landets beste kvinnelige sjakkspillere og deltok på det norske landslaget under Sjakk-OL i Tromsø tidligere i år. Dolzhikova har fullført en doktorgradsavhandling i pedagogikk om sjakkundervisning av barn, samt skrevet fire lærebøker i sjakk.
 
 
 

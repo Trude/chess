@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %title Steria Sjakk
+    %title Sopra Steria Sjakk
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -11,15 +11,15 @@
       %p#thinkstock Thinkstock by Getty
       #steria
         .logo
-          = link_to image_tag("steria-logo-white.png", :alt => "Sterialogo"), 'http://steria.no', target: '_blank', :title => "Steria"
+          = link_to image_tag("sopra-steria-logo.png", :alt => "Sopra Steria"), 'http://www.soprasteria.no', target: '_blank', :title => "Sopra Steria"
         .jslogo
-          = link_to image_tag("javazone.png", :alt => "JavaZonelogo"), 'http://javazone.no', target: '_blank', :title => "JavaZone"
+          = link_to image_tag("ndc.png", :alt => "NDC"), 'http://www.ndcoslo.com', target: '_blank', :title => "NDC"
       .banner
         .text
           %h1 Tar du utfordringen?
-          %h2 Slå Simen Agdestein eller Olga Dolzhikova i lynsjakk og vinn signert sjakkbrett!
-          %p Hvor: Steria sin stand på JavaZone
-          %p Når: 10. og 11. september
+          %h2 Slå Simen Agdestein i lynsjakk og vinn signert sjakkbrett!
+          %p Hvor: Steria sin stand på NDC
+          %p Når: 18. og 19. juni
           .sign-up= link_to 'Ta utfordringen!', '#registration'
 
     .container
@@ -28,7 +28,7 @@
     .footer
       .text
         Noe du lurer på? Ta kontakt med Ole-Anders Wilhelmsen (
-        = link_to 'owilhelm@steria.no', 'mailto: owilhelm@steria.no'
-        \/ 932 55 245 ) eller Trude Martinsen (
-        = link_to 'trum@steria.no', 'mailto: trum@steria.no'
-        \/ 988 08 621 )
+        = link_to 'ole-anders.wilhelmsen@soprasteria.com', 'mailto: ole-anders.wilhelmsen@soprasteria.com'
+        \/ 932 55 245 ) eller Jørgen Brække (
+        = link_to 'jorgen.braekke@soprasteria.com', 'mailto: jorgen.braekke@soprasteria.com'
+        \/ 415 03 646 )

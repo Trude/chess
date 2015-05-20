@@ -28,8 +28,8 @@ body {
     }
     #steria {
       height: 166px;
+      background: image_url('header.png') no-repeat;
       position: relative;
-      border-bottom: 8px solid $dark_red;
       width: 100%;
 
       .logo {
@@ -81,7 +81,7 @@ body {
           margin-top: 80px;
           a {
             margin: 20px auto;
-            background-color: #B7DD8F;
+            background-color: $pink;
             font-size: 18px;
             font-size: 1.8rem;
             color: white;
@@ -254,7 +254,7 @@ body {
             }
           }
           .btn {
-            background-color: $red;
+            background-color: $pink;
             padding: 15px;
             width: 150px;
             margin: 30px auto 10px;
@@ -277,15 +277,16 @@ body {
 
   .footer {
     height: 200px;
+    background: image_url('footer.png') no-repeat right;
     position: relative;
     width: 100%;
     .text {
       position: absolute;
       bottom: 20px;
       left: 50px;
-      color: black;
+      color: lightpink;
       a {
-        color: black;
+        color: lightpink;
       }
     }
   }

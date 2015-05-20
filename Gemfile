@@ -31,15 +31,7 @@ gem 'newrelic_rpm'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-# Use postgresql as the database for Active Record
-group :production do 
-  gem 'pg'  
-end
-
-group :development do
-  gem 'sqlite3'
-end
-
+gem 'pg'
 # gem 'jquery-datatables-rails', '~> 2.2.3'
 
 # group :assets do

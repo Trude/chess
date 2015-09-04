@@ -2,25 +2,20 @@
   %table#regtab
     %thead
       %tr
-        %th Id
         %th Navn
         %th Firma
         %th Telefonnummer
         %th Mail
         %th Kan kontaktes?
-        %th Kommentar
 
     %tbody
       - for r in @registrations
         %tr
-          %td= r.id
           %td= r.name
           %td= r.company
           %td= r.phone
           %td= r.email
           %td= r.want_to_be_contacted ? 'Ja' : 'Nei'
-          %td= r.comment
-
 
 :javascript
   $('#regtab').dataTable();

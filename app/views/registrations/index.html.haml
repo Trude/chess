@@ -1,15 +1,16 @@
 %section.information
-  %h1 Spill sjakk med Agdestein
-  %p I samarbeid med NDC gir vi deg mulighet til å slå Simen Agdestein i sjakk på Sopra Sterias stand på NDC 2015. I flere av pausene mellom foredragene kjører vi klokkesimultan hvor flere får prøve seg samtidig mot en av de to landslagsspillerne.
+  %h1 JavaZone vs. Simen
+  
+  %p I samarbeid med JavaZone gir vi deg mulighet til å slå Simen Agdestein i sjakk på Sopra Sterias stand på JavaZone 2015. 
 
-  %p Det blir totalt arrangert seks runder klokkesimultan disse to dagene – hver på 20 minutter. Av de påmeldte trekker vi ut 6-8 spillere per runde. De som blir trukket ut får en SMS med klokkeslett i god tid før de skal møte opp. Tidspunkt kan du se under. Den som gjør det best hver av dagene, vinner et signert sjakkbrett.
+  %p På onsdag blir det arrangert to runder klokkesimultan, her får flere spillere samtidig prøve seg mot landslagsspilleren. Av de påmeldte trekker vi ut 8-12 spillere per runde. De som blir trukket ut får en SMS med klokkeslett i god tid før de skal møte opp. Tidspunkt kan du se under. Den som gjør det best hver av dagene, vinner et signert sjakkbrett.
+
+  %p På torsdag stiller Simen Agdestein til kamp mot hele JavaZone samlet! Hvem er best; JavaZone eller Agdestein? Under spillet må JavaZone stemme fram hvert trekk mot landslagsspilleren. Sjakkspillet vil være tilgjengelig her: (linke til siden/påmelding).  Spillerene som totalt i kampen stemmer på de beste trekkene mot Simen Agdestein vinner et signert sjakkbrett.
 
   %p
-    Det vil bli kjørt klokkesimultan sjakk i følgende pauser:
+    9. september: klokkesimultan i pausen 12:40–13:00 og 15:20–15:40 
     %br
-    18. juni: 11:20–11:40, 12:40–13:00 og 14:40–15:00
-    %br
-    19. juni: 11:20–11:40, 12:40–13:00 og 14:40–15:00
+    10. september: JavaZone vs. Simen Agdestein fra klokken 12:40
     %br
 
 %section.one-row
@@ -17,7 +18,7 @@
     .form-container
       %h2 Ta utfordringen!
       .form
-        %p Fyll ut skjema under for å være med i trekningen om å spille sjakk mot Simen Agdestein på NDC Oslo 2015.
+        %p Fyll ut skjema under for å være med i trekningen om å spille sjakk mot Simen Agdestein på JavaZone Oslo 2015.
         = form_for @registration, method: :post do |f|
           .form-row
             %label.text Navn:
@@ -34,7 +35,7 @@
               = f.email_field :email, class: 'text'
           .form-row.checkbox.going
             = f.check_box :goingToJz, class: 'checkbox'
-            %label.checkbox Jeg skal på NDC
+            %label.checkbox Jeg skal på JavaZone
           .form-row.checkbox
             = f.check_box :want_to_be_contacted, class: 'checkbox', checked: true
             %label.checkbox Jeg godkjenner at Sopra Steria kan kontakte meg

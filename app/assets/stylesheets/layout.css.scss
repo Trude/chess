@@ -29,7 +29,7 @@ body {
     #steria {
       height: 166px;
       position: relative;
-      background: image_url('header.png') no-repeat center;
+      border-bottom: 8px solid $dark_red;
       width: 100%;
 
       .logo {
